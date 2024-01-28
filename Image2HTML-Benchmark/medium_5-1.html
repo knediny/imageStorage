@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corporate Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #search-box {
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block; /* Makes the list horizontal */
+            margin: 0; /* Removes default margin */
+        }
+
+        nav ul li {
+            display: inline; /* Makes list items sit side-by-side */
+            margin-right: 10px;
+        }
+
+        .news-links a {
+            margin-right: 15px;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+            display: inline-block; /* Aligns items horizontally for sidebar */
+            border: 1px solid #ddd; /* Adds a border around each item */
+            margin: 0; /* Removes default margin */
+        }
+
+        aside ul li {
+            display: inline; /* Side-by-side display */
+            margin: 0 10px;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main page title -->
+    <header>
+        <h1>Welcome to our corporate portal</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <input type="text" id="search-box" placeholder="Search...">
+        <button id="search-button">Search</button>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="news-links">
+            <a href="#news1">News1</a>
+            <a href="#news2">News2</a>
+            <a href="#news3">News3</a>
+        </div>
+    </nav>
+
+    <!-- Sidebar for secondary navigation -->
+    <aside>
+        <ul>
+            <li><a href="#employee-directory">Employee Directory</a></li>
+            <li><a href="#forum">Forum</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+        </ul>
+    </aside>
+
+    <!-- Placeholder for main content -->
+    <main>
+        <!-- This corresponds to the large empty rectangle in the screenshot -->
+        <!-- Content would be populated dynamically -->
+    </main>
+
+    <!-- Multimedia playback area -->
+    <footer>
+        <audio controls>
+            <!-- Audio file would be sourced here -->
+            <source src="path/to/audiofile.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </footer>
+
+</body>
+</html>
