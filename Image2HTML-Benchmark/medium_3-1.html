@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>个人神情护照</title>
+    <!-- 引入CSS样式表来控制布局和样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>个人神情护照</h1>
+        <!-- 导航栏，使用flex或inline-block来实现水平排列 -->
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#team">导师团队</a></li>
+            </ul>
+        </nav>
+        <!-- 搜索栏应位于导航栏下方，使用flex或block布局实现 -->
+        <div class="search-bar">
+            <input type="text" placeholder="搜索...">
+            <button>搜索</button>
+        </div>
+    </header>
+
+    <!-- 侧边栏应该包含社交链接，这部分可以使用flex或inline-block来使其垂直排列 -->
+    <aside class="social-links">
+        <a href="#linkedin">LinkedIn</a>
+        <a href="#twitter">Twitter</a>
+        <a href="#facebook">Facebook</a>
+    </aside>
+
+    <main>
+        <!-- 新闻列表和文章内容应该是分开的，这里用section来分隔 -->
+        <section class="news">
+            <h2>新闻</h2>
+            <!-- 新闻内容 -->
+        </section>
+
+        <!-- 新闻列表，如果需要保持与原图形式一致，可以用ul或dl等 -->
+        <section class="ordered-list">
+            <h2>新闻列表</h2>
+            <ol>
+                <li>新闻项目一</li>
+                <li>新闻项目二</li>
+                <li>新闻项目三</li>
+            </ol>
+        </section>
+        
+        <!-- 主要内容区域，包含详细介绍或文章 -->
+        <section class="main-content">
+            <h2>主要内容</h2>
+            <!-- 文章内容 -->
+            <p>这里可以放置文章内容、视频、图片等详细介绍。</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 页脚信息可以放在这里 -->
+    </footer>
+
+    <style>
+        /* 这里提供一些基本的CSS规则来模拟可能的样式，实际项目中应放入单独的CSS文件中 */
+        body {
+            font-family: sans-serif;
+        }
+
+        header, main, footer {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* 使导航项水平排列 */
+        }
+
+        nav ul li {
+            margin-right: 20px; /* 导航项之间的间距 */
+        }
+
+        .search-bar {
+            margin-top: 20px; /* 与导航栏的间距 */
+        }
+
+        aside.social-links {
+            display: block;
+            margin-top: 10px;
+        }
+
+        aside.social-links a {
+            display: block; /* 社交链接垂直排列 */
+            margin-bottom: 5px; /* 社交链接间距 */
+        }
+
+        .news, .ordered-list, .main-content {
+            margin-top: 20px; /* 分区间距 */
+        }
+    </style>
+</body>
+</html>
