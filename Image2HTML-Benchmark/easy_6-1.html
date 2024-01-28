@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>示例网页</title>
+    <style>
+      /* CSS样式略有修改 */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        width: 100%;
+        background-color: #eee;
+      }
+      .logo {
+        padding: 10px;
+      }
+      .main-nav,
+      .sub-nav {
+        background-color: #ddd;
+        padding: 10px;
+      }
+      .additional-nav {
+        /* 新增辅助导航样式 */
+        background-color: #ccc;
+        padding: 10px;
+      }
+      .content {
+        width: 70%;
+        float: left;
+        padding: 20px;
+      }
+      .sidebar {
+        width: 30%;
+        float: right;
+        padding: 20px;
+        background-color: #f0f0f0;
+      }
+      .footer {
+        clear: both;
+        background-color: #bbb;
+        padding: 10px;
+        text-align: center;
+      }
+      /* 列表样式 */
+      .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .sidebar li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">公司logo</div>
+      <div class="main-nav">主导航</div>
+      <div class="sub-nav">副导航</div>
+      <div class="additional-nav">其他导航</div>
+      <!-- 新增辅助导航栏 -->
+    </div>
+    <div class="content">
+      内容区域
+      <p>这里是页面的主要内容...</p>
+    </div>
+    <div class="sidebar">
+      辅助内容
+      <ul>
+        <li>侧边栏内容1</li>
+        <li>侧边栏内容2</li>
+        <li>侧边栏内容3</li>
+        <!-- 更多列表项 -->
+      </ul>
+    </div>
+    <div class="footer">
+      页脚
+      <p>版权信息和其他页脚内容...</p>
+    </div>
+  </body>
+</html>
