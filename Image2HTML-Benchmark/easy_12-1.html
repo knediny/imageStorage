@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Intranet</title>
+    <style>
+        /* 添加基本的 CSS 样式调整布局和外观 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        #header h1 {
+            text-align: center;
+        }
+        
+        #navigation {
+            list-style: none;
+            overflow: hidden; /* Clearfix */
+            padding: 0;
+        }
+        
+        #navigation li {
+            float: left; /* 水平排列导航项 */
+            margin-right: 20px; /* 导航项之间的间距 */
+        }
+        
+        #content > div {
+            text-align: center;
+            border-bottom: 1px solid #ddd; /* 添加每个模块标题后分隔线 */
+            padding-bottom: 20px; /* 与分隔线之间的间距 */
+            margin-bottom: 20px; /* 模块与模块之间的间距 */
+        }
+
+        #search {
+            text-align: center;
+            margin: 20px 0; /* 添加顶部和底部的间距 */
+        }
+
+        #search input[type="text"] {
+            margin-right: 5px; /* 保持搜索框和按钮紧挨在一起 */
+        }
+
+        #settings {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 标题栏 -->
+    <div id="header">
+        <h1>Company Intranet</h1>
+    </div>
+
+    <!-- 导航栏 -->
+    <ul id="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#employees">Employees</a></li>
+        <li><a href="#forum">Forum</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#document">Document</a></li>
+    </ul>
+
+    <!-- 内容区块 -->
+    <div id="content">
+        <!-- News 模块 -->
+        <div id="news">
+            <h2>News</h2>
+            <hr>
+            <p>This is the latest company news.</p>
+        </div>
+
+        <!-- Employee Directory 模块 -->
+        <div id="employees">
+            <h2>Employee Directory</h2>
+            <hr>
+            <p>A list of all employees.</p>
+        </div>
+
+        <!-- Forum 模块 -->
+        <div id="forum">
+            <h2>Forum</h2>
+            <hr>
+            <p>View and participate in discussions.</p>
+        </div>
+
+        <!-- Workflow Management 模块 -->
+        <div id="workflow">
+            <h2>Workflow Management</h2>
+            <hr>
+            <p>Keep track of your work.</p>
+        </div>
+
+        <!-- Document Sharing 模块 -->
+        <div id="document">
+            <h2>Document Sharing</h2>
+            <hr>
+            <p>Securely share and collaborate on documents.</p>
+        </div>
+    </div>
+    
+    <!-- 搜索栏 -->
+    <form id="search" action="#" method="post">
+        <input type="text" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+    
+    <!-- 个人设置 -->
+    <div id="settings">
+        <h2>Personal Settings</h2>
+        <p>Adjust your personal settings.</p>
+    </div>
+
+</body>
+</html>
